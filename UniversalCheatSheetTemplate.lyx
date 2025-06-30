@@ -1,0 +1,3946 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrreprt
+\begin_preamble
+\usepackage{tikz}
+\usepackage{tikzpagenodes} 
+\usepackage{palatino}
+\usepackage{mathpazo}
+\usepackage{upgreek}
+\usepackage{datetime}
+\usepackage{graphicx}
+\usepackage{svn-multi}
+\usepackage[absolute]{textpos}
+\setlength{\parskip}{0mm}%
+\setlength{\belowdisplayskip}{0pt}%
+\setlength{\belowdisplayshortskip}{0pt}%
+\setlength{\abovedisplayskip}{0pt}%
+\setlength{\abovedisplayshortskip}{0pt}%
+\setlength{\parindent}{0mm}
+\newgeometry{left=1mm,bottom=1mm,top=1mm,right=1mm}
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage{lipsum}
+
+\usepackage{color}
+\usepackage{blindtext}
+\usepackage{tikz}
+\urlstyle{rm}
+\usepackage{capt-of}
+\let\originalleft\left
+\let\originalright\right
+\renewcommand{\left}{\mathopen{}%
+\mathclose\bgroup\originalleft}
+\renewcommand{\right}{\aftergroup%
+\egroup\originalright}
+\usepackage[explicit]{titlesec}
+%\titleformat{\section}{\bfseries}{}{0em}{BW.\thesection #1}%   \textbf ist ein makro und geht nicht
+%\titleformat{\chapter}[display]{\scshape\bfseries\Large}{}{0mm}{\stepcounter{chapter}\thechapter\ #1}{}
+%titleformat chapter... erfordert, secnumdepth!=-1.
+\titleformat{\chapter}{\scshape\bfseries\Large}{}{0mm}{\thechapter\  #1} 
+\titleformat{name=\chapter,numberless}{\scshape\bfseries\Large}{}{0mm}{#1}
+\titleformat{\section}[runin]{\itshape\bfseries\large}{}{0mm}{\thesection\  #1}  %\vspace*{2pt}
+\titleformat{name=\section,numberless}[runin]{\itshape\bfseries\large}{}{0mm}{#1} % \vspace*{2pt}
+\titleformat{\subsection}[runin]{\itshape\bfseries\vspace*{2pt}}{}{0mm}{\thesection\  #1} 
+\titleformat{name=\subsection,numberless}[runin]{\itshape\bfseries\vspace*{2pt}}{}{0mm}{#1}
+\titlespacing*{\chapter}{0pt}{-7mm}{0pt}
+\titlespacing*{\section}{0pt}{-2pt}{4pt} % Abstand {links}{drüber}{rechts}
+\titlespacing*{\subsection}{0pt}{-2pt}{4pt}% Abstand {links}{drüber}{rechts}
+
+\setcounter{section}{3}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\setlist[itemize,1]{leftmargin=\dimexpr 5mm, topsep=0mm} % Veraendert den Abstand vor Aufzaehlungspunkten
+\setlist[itemize,2]{leftmargin=\dimexpr 5mm, topsep=0mm} % Veraendert den Abstand vor Aufzaehlungspunkten
+\setlist[enumerate,1]{leftmargin=\dimexpr 8mm, topsep=0mm, parsep=0mm, itemsep=0mm} % Veraendert den Abstand vor Aufzaehlungspunkten
+\setlist[enumerate,2]{leftmargin=\dimexpr 8mm, topsep=0mm, parsep=0mm, itemsep=0mm} % Veraendert den Abstand vor Aufzaehlungspunkten
+
+\mathcode `,="013B
+\mathcode `.="613A
+\DeclareMathAlphabet{\mathbfit}{OML}{cmm}{b}{it}
+\makeatletter
+% Der nachfolgende Befehl erfordert das Paket amsmath
+\newcommand{\eqnum}{\refstepcounter{equation}\textup{\tagform@{\theequation}}}
+\makeatother
+\renewcommand{\theequation}{\ifnum\thechapter=666 FS\else \thechapter\fi .\arabic{equation}}
+\renewcommand{\thetable}{\ifnum\thechapter=666 FS\else \thechapter\fi .\arabic{table}}
+\makeatletter
+\DeclareMathSizes{\@xpt}{\@xpt}{\@xpt}{\@xpt}
+\makeatother
+\DeclareMathSizes{10.95}{11}{13}{13}
+\def\tsrotate{90}
+
+\usepackage[type={CC},modifier={by},version={4.0},]{doclicense}
+\renewcommand{\UrlBreaks}{\do\/ %
+\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j\do\k\do\l % 
+\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x %
+\do\y\do\z\do\A\do\B\do\C\do\D\do\E\do\F\do\G\do\H\do\I\do\J %
+\do\K\do\L\do\M\do\N\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V %
+\do\W\do\X\do\Y\do\Z}
+\end_preamble
+\options a4paper
+\use_default_options true
+\begin_modules
+formelsammlungnode_v6
+\end_modules
+\maintain_unincluded_children no
+\language ngerman
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\branch Loesung
+\selected 1
+\filename_suffix 0
+\color background background
+\end_branch
+\branch Herleitung
+\selected 1
+\filename_suffix 0
+\color background background
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0cm
+\topmargin 0cm
+\rightmargin 0cm
+\bottommargin 0cm
+\headheight 0cm
+\headsep 0cm
+\footskip 0cm
+\secnumdepth 2
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style polish
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\listings_params "numberstyle={\tiny},numbersep=0pt,basicstyle={\ttfamily},breaklines=true"
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+ueberschrift}{
+\backslash
+LaTeX -Cheat Sheet template,
+ 
+\backslash
+
+\backslash
+Author:
+ Prof.
+ Dr.
+ Thorbjörn Siaenen}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+providecommand
+\backslash
+tssection[1]{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikz{ 
+\backslash
+node[draw] (0,0){sdf};
+ }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}%
+\end_layout
+
+\begin_layout Plain Layout
+
+% maximal print width on a Brother 8510DN is 196 mm
+\end_layout
+
+\begin_layout Plain Layout
+
+% left and right have to be 7 mm margins,
+ above and below 4.5 mm (better:
+ 5 mm)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength
+\backslash
+abovedisplayskip{0pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength
+\backslash
+belowdisplayskip{0pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength
+\backslash
+abovedisplayshortskip{0pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength
+\backslash
+belowdisplayshortskip{0pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+% Distances in a Bullet-Point-List:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+let
+\backslash
+tempone
+\backslash
+itemize
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+let
+\backslash
+temptwo
+\backslash
+enditemize
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewenvironment{itemize}{
+\backslash
+tempone
+\backslash
+setlength{
+\backslash
+itemsep}{1pt} 
+\backslash
+setlength{
+\backslash
+parskip}{0pt}}{
+\backslash
+temptwo}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifx
+\backslash
+tsrechts
+\backslash
+undefined
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newlength{
+\backslash
+tsrechts}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+tsrechts}{6mm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifx
+\backslash
+tsoben
+\backslash
+undefined
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newlength{
+\backslash
+tsoben}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+tsoben}{0mm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifdefined 
+\backslash
+tsscalefactor 
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+tsscalefactor}{0.99}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{
+\backslash
+tsoben} %
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{plain}%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+tsrechts}
+\backslash
+begin{tikzpicture}[inner sep=1pt,
+ scale=
+\backslash
+tsscalefactor]%
+\end_layout
+
+\begin_layout Plain Layout
+
+%inner sep = abstand zwischen Rand und Inhalt-Nodes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[line width=0.5*
+\backslash
+tsscalefactor] (0,0) rectangle (196mm,287mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill[gray] (3mm,183.5mm) circle (3mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill[gray] (3mm,103.5mm) circle (3mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[line width=0.5*
+\backslash
+tsscalefactor] (0,47.833mm) -- (196mm,47.833mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[line width=0.5*
+\backslash
+tsscalefactor] (0,95.666mm) -- (196mm,95.666mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[line width=0.5*
+\backslash
+tsscalefactor] (10mm,143.5mm) -- (196mm,143.5mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[line width=0.5*
+\backslash
+tsscalefactor] (0,191.33mm) -- (196mm,191.33mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[line width=0.5*
+\backslash
+tsscalefactor] (0,239.166mm) -- (196mm,239.166mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[line width=0.5*
+\backslash
+tsscalefactor] (0.5mm,143.5mm) node[scale=0.6*
+\backslash
+tsscalefactor,
+ text width=140mm,
+ align=center,
+ anchor = north,rotate=90,inner sep=0mm]{
+\backslash
+sffamily
+\backslash
+textbf{
+\backslash
+ueberschrift}};
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%Erste Spalte:
+\end_layout
+
+\begin_layout Plain Layout
+
+%ampersand replacement = 
+\backslash
+tseqseparator ist wichtig,
+ wenn in dem node eine Tabelle stehen soll
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+matrix[row sep=0mm,
+ column sep = 0pt,
+ matrix anchor=west,ampersand replacement=
+\backslash
+tseqseparator] at (0,23.91666mm){
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+itemindent}{0em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Lizenz
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+doclicenseThis 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Chapter
+Allgemeines
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Section
+Einleitung
+\end_layout
+
+\begin_layout Plain Layout
+Diese Vorlage einer Formelsammlung kann dazu verwendet werden eine beliebige Formelsammlung zu erstellen.
+ Diese Formelsammlung hat die folgenden Eigenschaften:
+ Sie wird mit LaTeX erstellt (eine LyX-Datei ist ebenfalls verfügbar).
+ Die Schriftgröße ist 6.
+ Das ist klein genug,
+ dass viel Inhalt auf eine Seite passt und groß genug um noch gelesen werden zu können.
+ Indizes und Exponenten werden nicht in kleinerer Schriftart gesetzt.
+ Damit bleibt die Lesbarkeit erhalten.
+ Es sind viele Beispiele für Formelsammlungselemente enthalten (Formeln,
+ Tabellen,
+ Bilder,
+ Aufzählungen u.s.w).
+ Sollte etwas fehlen oder es ihnen gefallen,
+ schreiben Sie an
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\color blue
+
+\begin_inset CommandInset href
+LatexCommand href
+name "t.siaenen@ostfalia.de"
+target "t.siaenen@ostfalia.de"
+type "mailto:"
+literal "false"
+
+\end_inset
+
+
+\color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Section
+Technisches in Bezug auf LaTeX
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "eq:formelnr1"
+
+\end_inset
+
+Sie ist mit dem Programm mit LaTeX erstellt.
+ LaTeX ist eine Beschreibungssprache für Dokumente.
+ Das Dokument wird mit verschiedenen Befehlen beschrieben und der beschreibende Text in einer Text-Datei gespeichert.
+ Diese Text-Datei wird in eine PDF-Datei umgewandelt,
+ wobei viele Befehle dazu führen,
+ dass Tabellen,
+ Formeln,
+ Abbildungen und Aufzählungen formschön gesetzt werden.
+\end_layout
+
+\begin_layout Plain Layout
+Unter Windows lautet der Befehl zum Umwandeln:
+ 
+\family typewriter
+pdflatex UniversalFormelsammlung.tex
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Dies setzt voraus,
+ dass (unter Windows) das Programm MikTex (
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+www.miktex.org
+\end_layout
+
+\end_inset
+
+) installiert ist.
+ Als Editor wird notepad++ oder texmaker empfohlen.
+ Dieses Dokument ist keine abschließende Schulung in dem System LaTeX,
+ sondern soll Sie lediglich in die Lage versetzten eine Formelsammlung zu erstellen.
+ Für umfassendere Informationen werden die Unterlagen der Fernuni-Hagen empfohlen:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{https://www.fernuni-hagen.de/zdi/docs/a026_latex_einf.pdf}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSLastNode
+status collapsed
+
+\begin_layout Section
+Technisches in Bezug auf LyX
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "eq:technischeslyx"
+
+\end_inset
+
+Die LyX-Vorlage verwendet zwei Module,
+ die vor der Benutzung installiert werden müssen.
+ Die Datei 
+\family typewriter
+formelsammlungnode_v6.module
+\family default
+ wird in das Verzeichnis 
+\begin_inset Quotes pld
+\end_inset
+
+C:
+\backslash
+Users
+\backslash
+BENUTZERNAME
+\backslash
+AppData
+\backslash
+\SpecialChar softhyphen
+Roa\SpecialChar softhyphen
+ming
+\backslash
+LyX2.3
+\backslash
+layouts
+\begin_inset Quotes prd
+\end_inset
+
+ (in früheren LyX-Versionen 
+\begin_inset Quotes pld
+\end_inset
+
+C:
+\backslash
+Program Files (x86)
+\backslash
+LyX 2.3
+\backslash
+Resources
+\backslash
+layouts
+\begin_inset Quotes prd
+\end_inset
+
+) kopiert.
+ Weiterhin muss in LyX die Befehlsfolge 
+\begin_inset Quotes pld
+\end_inset
+
+Werkzeuge -> neu Konfigurieren
+\begin_inset Quotes prd
+\end_inset
+
+ ausgeführt werden.
+\end_layout
+
+\begin_layout Plain Layout
+In den Spalten stehen dann untereinander Blöcke des Typs 
+\begin_inset Quotes pld
+\end_inset
+
+Formel
+\begin_inset Quotes prd
+\end_inset
+
+.
+ Der letzte Block innerhalb einer Spalte muss vom Typ 
+\begin_inset Quotes pld
+\end_inset
+
+letzte Formel
+\begin_inset Quotes prd
+\end_inset
+
+ sein.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%Zweite Spalte:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+matrix[row sep=0mm,
+ column sep = 0pt,
+ matrix anchor=west,ampersand replacement=
+\backslash
+tseqseparator] at (0,71.749995mm){
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status collapsed
+
+\begin_layout Section
+Eigenschaften dieser Formelsammlung
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "eq:eigenschaftenformelsammlung"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sie ist mit dem Computer erstellt
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Änderungen,
+ Umsortieren und Korrekturen sind Rückstandsfrei möglich
+\end_layout
+
+\begin_layout Itemize
+Man lernt,
+ besser mit dem Computer umzugehen
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Druckränder des Druckers sind berücksichtigt
+\end_layout
+
+\begin_layout Itemize
+Es passt ein Maximum an Inhalt auf eine Seite:
+ Bei der Schriftgröße wurde ein Kompromiss aus Informationsdichte und Lesbarkeit getroffen.
+\end_layout
+
+\begin_layout Itemize
+Die Schriftgröße von Indizes wird nicht verkleinert.
+\end_layout
+
+\begin_layout Itemize
+Tabelle,
+ Grafiken,
+ Aufzählungen,
+ Auflistungen und Formeln sind exemplarisch gezeigt.
+\end_layout
+
+\begin_layout Itemize
+Aufteilung in Kapitel,
+ Abschnitte und Unterabschnitte ermöglichen die Klassifizierung des Inhaltes.
+\end_layout
+
+\begin_layout Plain Layout
+Hinweis:
+ Eine gute Formelsammlung ist sicherlich schneller kopiert als selbst erstellt.
+ Es ist besser,
+ eine Formelsammlung selbst zu erstellen.
+ Das eigenständige Reflektieren und Zusammenfassen von Lehrinhalten ist ein wesentlicher Bestandteil des Lernprozesses.
+ Dieser wird übersprungen,
+ wenn beispielsweise eine Formelsammlung kopiert wird,
+ anstatt sie selbst zu erstellen.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Chapter
+Beispielelemente 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Section
+Elemente mit Rahmen
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Dies ist eine Formel 
+\begin_inset Formula $x^{2}+y^{2}=z^{2}$
+\end_inset
+
+ in einem Kästchen 
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+eqnum
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "eq:formelinkaestchen"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Dies ist eine Formel 
+\begin_inset Formula $\mathrm{e^{\mathrm{j}\,\pi}}+1=0$
+\end_inset
+
+ in einem Kästchen 
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+eqnum
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "eq:formelinkaestchenzwei"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Dies ist ein Text unterhalb der Kästchen.
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+eqnum
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "eq:kaestchenmitrahmen"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Section
+Farben
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:farben"
+
+\end_inset
+
+Der Text kann in verschiedene Farben gesetzt werden.
+ Diese sind 
+\color blue
+Blau
+\color inherit
+,
+ 
+\color teal
+Blaugrün
+\color inherit
+,
+ 
+\color brown
+Braun
+\color inherit
+,
+ 
+\color cyan
+Cyan
+\color inherit
+,
+ 
+\color darkgray
+Dunkelgrau
+\color inherit
+,
+ 
+\color yellow
+Gelb
+\color inherit
+,
+ 
+\color gray
+Grau
+\color inherit
+,
+ 
+\color green
+Grün
+\color inherit
+,
+ 
+\color lightgray
+Hellgrau
+\color inherit
+,
+ 
+\color magenta
+Magenta
+\color inherit
+,
+ 
+\color lime
+Neongrün
+\color inherit
+,
+ 
+\color olive
+Olivgrün
+\color inherit
+,
+ 
+\color orange
+Orange
+\color inherit
+,
+ 
+\color pink
+Pink
+\color inherit
+,
+ 
+\color purple
+Purpur
+\color inherit
+,
+ 
+\color red
+Rot
+\color inherit
+,
+ 
+\color black
+Schwarz
+\color inherit
+,
+ 
+\color violet
+Violett
+\color inherit
+ und 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+rlap{
+\backslash
+raisebox{-0.4mm}{
+\backslash
+rule{11mm}{4.4mm}}}
+\backslash
+textcolor{white}{
+\backslash
+hspace*{0.3mm}Weiß.}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Wenn Farbdefinitionen verschachtelt sind,
+ dann wird der Text in der innersten verschachtelten Farbe gesetzt:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textcolor{blue}{Blauer Text,
+ 
+\backslash
+textcolor{orange}{orangener Text},
+ blauer Text}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Section
+Aufzählungen
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "eq:aufzaehlung"
+
+\end_inset
+
+Ein weiteres Element ist die Aufzählung:
+\end_layout
+
+\begin_layout Enumerate
+Erstes Element
+\end_layout
+
+\begin_layout Enumerate
+Zweites Element
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Zweites Element,
+ Teil a
+\end_layout
+
+\begin_layout Enumerate
+Zweites Element,
+ Teil b
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Drittes Element
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSLastNode
+status open
+
+\begin_layout Section
+Stichpunkte
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "eq:aufzaehlung2"
+
+\end_inset
+
+Ein weiteres Element ist die Aufzählung:
+\end_layout
+
+\begin_layout Itemize
+Erstes Elemen
+\end_layout
+
+\begin_layout Itemize
+Zweites Element
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Zweites Element,
+ Teil a
+\end_layout
+
+\begin_layout Itemize
+Zweites Element,
+ Teil b
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Drittes Element
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%Dritte Spalte:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+matrix[row sep=0mm,
+ column sep = 0pt,
+ matrix anchor=west,ampersand replacement=
+\backslash
+tseqseparator] at (6.5mm,119.583325mm){
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Section
+Tabellen
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "eq:tabellengestaltung"
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newline
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Überschrift
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Überschrift
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Überschrift
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" rotate="90" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Überschrift
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x^{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x^{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x^{5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+b
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+d
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+null
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features islongtable="true" longtabularalignment="center">
+<column alignment="right" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row endfirsthead="true">
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Station
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Messwert
+\begin_inset space ~
+\end_inset
+
+(V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4711 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Phantom HPhantom
+status open
+
+\begin_layout Plain Layout
+000
+\end_layout
+
+\end_inset
+
+3,14
+\begin_inset Phantom HPhantom
+status open
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0815 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+000
+\end_layout
+
+\end_inset
+
+2,74
+\begin_inset Phantom HPhantom
+status open
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0123456789 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Phantom HPhantom
+status open
+
+\begin_layout Plain Layout
+000
+\end_layout
+
+\end_inset
+
+2,345 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0123456 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Phantom HPhantom
+status open
+
+\begin_layout Plain Layout
+00
+\end_layout
+
+\end_inset
+
+12,3
+\begin_inset Phantom HPhantom
+status open
+
+\begin_layout Plain Layout
+00
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+007 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2345,3
+\begin_inset Phantom HPhantom
+status open
+
+\begin_layout Plain Layout
+00
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row caption="true">
+<cell multicolumn="1" alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ausrichtung am Komma 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:komma"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Chapter
+Unterteilungen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Section
+Kästchen
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "eq:unerteilungen"
+
+\end_inset
+
+Texte können noch unterteilt werden:
+\end_layout
+
+\begin_layout Section
+Abschnittsüberschrift
+\end_layout
+
+\begin_layout Plain Layout
+Dies ist die erste Zeile in diesem Abschnitt.
+ Es folgen zwei Unter-Abschnitte
+\end_layout
+
+\begin_layout Subsection
+Unterabschnitt A
+\end_layout
+
+\begin_layout Plain Layout
+Dies ist eine Zeile Text im Unterabschnitt A
+\end_layout
+
+\begin_layout Subsection
+Unterabschnitt B
+\end_layout
+
+\begin_layout Plain Layout
+Dies ist eine Zeile Text im Unterabschnitt B
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Section
+Zeilenumbruch nach Überschrift
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+~
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+Hier ist gezeigt,
+ wie nach der Überschrift künstlich ein Zeilenumbruch eingebaut werden kann.
+\end_layout
+
+\begin_layout Section
+Horizontale Linie
+\end_layout
+
+\begin_layout Plain Layout
+Weiterhin ist hier ein Beispel für eine horizontale Linie über die Breite einer Spalte:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hrulefill~
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Und hier ist noch mehr Text.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Section
+Zeilenumbruch nach Überschrift
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+~
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+Hier ist gezeigt,
+ wie nach der Überschrift künstlich ein Zeilenumbruch eingebaut werden kann.
+\end_layout
+
+\begin_layout Section
+Horizontale Linie
+\end_layout
+
+\begin_layout Plain Layout
+Weiterhin ist hier ein Beispel für eine horizontale Linie über die Breite einer Spalte:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hrulefill~
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Und hier ist noch mehr Text.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSLastNode
+status open
+
+\begin_layout Section
+Fließtext und Formeln
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "eq:formelnnummeriert"
+
+\end_inset
+
+Formeln können in zwei Varianten geschrieben stehen:
+ Einmal im Text:
+ 
+\begin_inset Formula $\mathrm{sin}(x)=\pi/3$
+\end_inset
+
+ wie in diesem Beispiel,
+ oder als abgesetzte Formel:
+ 
+\begin_inset Formula 
+\[
+\mathrm{sin}(x)=\pi/3
+\]
+
+\end_inset
+
+Weiterhin kann man eine Formel auch automatisch nummerieren lassen:
+ 
+\begin_inset Formula 
+\begin{equation}
+\mathrm{sin}(x)=\pi/3\label{eq:abgesetzteformel}
+\end{equation}
+
+\end_inset
+
+In dem Text kann dann auf die Gleichung 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:abgesetzteformel"
+nolink "false"
+
+\end_inset
+
+ (Achtung:
+ Das Paket hyperref erzeugt Hyperlinks die auf der Seite an falscher Position liegen) referenziert werden.
+ Zwei Abgesetzte Formeln nebeneinander können mit folgender Struktur dargestellt werden:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "39text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\mathrm{e}^{\mathrm{j\,\pi}}+1=0\label{eq:allekonstentenineinergleichung}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "59text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\mathrm{sin}(x)^{2}+\mathrm{cos}(x)^{2}=1\label{eq:trigonometrischerpythagora}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Alternative Darstellungsweise mit Kästchen:
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "38text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\mathrm{e}^{\mathrm{j\,\pi}}+1=0\label{eq:allekonstentenineinergleichung-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "57text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\mathrm{sin}(x)^{2}+\mathrm{cos}(x)^{2}=1\label{eq:trigonometrischerpythagora-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Wenn statt der Gleichungsnummer zwei Fragezeichen erscheinen muss häufig die Datei noch einmal übersetzt,
+ oder label und ref haben unterschiedliche Marken.
+ Beim Konvertieren zwischen der .TEX-Datei und der PDF-Datei spricht man vom sog.
+ 
+\shape italic
+Setzen
+\shape default
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%vierte Spalte:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+matrix[row sep=0mm,
+ column sep = 0pt,
+ matrix anchor=west,ampersand replacement=
+\backslash
+tseqseparator] at (6.5mm,167.416655mm){
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Section
+Formelsatz
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSLastNode
+status open
+
+\begin_layout Section
+Regeln zum Formelsatz
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "eq:formelsatz"
+
+\end_inset
+
+Für das Setzen von Formeln gibt es Regeln:
+\end_layout
+
+\begin_layout Itemize
+Variablen werden kursiv gesetzt
+\end_layout
+
+\begin_layout Itemize
+Indizes,
+ Konstanten,
+ physikalische Einheiten und Funktionsnamen werden aufrecht gesetzt
+\end_layout
+
+\begin_layout Plain Layout
+Also:
+ 
+\begin_inset Formula $x_{\mathrm{start}}$
+\end_inset
+
+ statt 
+\begin_inset Formula $x_{start}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{sin}(x)$
+\end_inset
+
+ statt 
+\begin_inset Formula $sin(x)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $z=4+\mathrm{j}\,6$
+\end_inset
+
+ statt 
+\begin_inset Formula $z=4+j\,6$
+\end_inset
+
+,
+ 
+\begin_inset Formula $i=4{,}5\,\mathrm{A}$
+\end_inset
+
+ statt 
+\begin_inset Formula $i=4{,}5\,A$
+\end_inset
+
+ und 
+\begin_inset Formula $\mathrm{e}^{\mathrm{j}\,\pi}$
+\end_inset
+
+ statt 
+\begin_inset Formula $e^{j\,\pi}$
+\end_inset
+
+.
+ Bei Zahlenwerten in Formeln sollte das Komma als Dezimaltrennzeichen in geschweifte Klammern gesetzt werden.
+ Damit wird ein falscher Leerraum verhindert.
+ Richtig:
+ 
+\begin_inset Formula $\pi=3{,}14$
+\end_inset
+
+.
+ Falsch:
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+raisebox{-1mm}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/fig_kommaabstand/kommaabstand.png
+	width 19mm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+In Formeln kommen beispielhaft folgende Elemente vor:
+\end_layout
+
+\begin_layout Itemize
+Wurzel:
+ 
+\begin_inset Formula $\sqrt{\left(x\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+n-te Wurzel:
+ 
+\begin_inset Formula $\sqrt[3]{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Bruch:
+ 
+\begin_inset Formula $\frac{\text{Zähler}}{\text{Nenner}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Index:
+ 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Index mit mehreren Buchstaben:
+ 
+\begin_inset Formula $x_{\mathrm{start}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sub-(sub-)Indizes:
+ 
+\begin_inset Formula $S_{v_{\mathrm{end}_{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Exponent:
+ 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Exponent mit mehreren Buchstaben:
+ 
+\begin_inset Formula $x^{12}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Integral:
+ 
+\begin_inset Formula $\int x^{2}\,\mathrm{d}x$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Bestimmtes Integral:
+ 
+\begin_inset Formula $\int_{0}^{\infty}f(x)\,\mathrm{d}x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Buchstaben aufrecht gesetzt (nicht kursiv):
+ 
+\begin_inset Formula $\mathrm{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Summenzeichen:
+ 
+\begin_inset Formula $\sum$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Summenzeichen mit Grenzen:
+ 
+\begin_inset Formula $\sum_{k=1}^{42}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Griechische Buchstaben:
+ 
+\begin_inset Formula $\alpha$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\beta$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\gamma$
+\end_inset
+
+,
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Multiplikationspunkt (nicht:
+ $a*b$):
+ 
+\begin_inset Formula $a\cdot b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Geschweifte Klammern unten:
+ 
+\begin_inset Formula $\underbrace{a\cdot b}_{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Geschweifte Klammern oben:
+ 
+\begin_inset Formula $\overbrace{0\cdot b}^{=0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Abstand:
+ klein (Multiplikation) 
+\begin_inset Formula $a\,b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Abstand:
+ mittel 
+\begin_inset Formula $a\ b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Abstand:
+ groß 
+\begin_inset Formula $a\quad b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Doppelter großer Abstand:
+ 
+\begin_inset Formula $a\qquad b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Man achte darauf,
+ dass nach dem Mathebefehl ein Leerzeichen steht:
+ 
+\begin_inset Formula $\alpha a$
+\end_inset
+
+ % Hinweis:
+ $
+\backslash
+alphaa$ funktioniert nicht
+\end_layout
+
+\begin_layout Itemize
+Klammern,
+ deren Größe sich dem Inhalt anpassen:
+ 
+\begin_inset Formula $\left[\sqrt{x^{2}}\right]$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\left(\sqrt{x^{2}}\right)$
+\end_inset
+
+,
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left|\sqrt{x^{2}}\right|$
+\end_inset
+
+ statt 
+\begin_inset Formula $[\sqrt{x^{2}}]$
+\end_inset
+
+,
+ 
+\begin_inset Formula $(\sqrt{x^{2}})$
+\end_inset
+
+,
+ 
+\begin_inset Formula $|\sqrt{x^{2}}|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Klammern und senkrechte Striche in unterschiedlicher Größe:
+ 
+\begin_inset Formula $\bigr)$
+\end_inset
+
+ 
+\begin_inset Formula $\biggr)$
+\end_inset
+
+ 
+\begin_inset Formula $\Biggr)$
+\end_inset
+
+ 
+\begin_inset Formula $\bigl($
+\end_inset
+
+ 
+\begin_inset Formula $\biggl($
+\end_inset
+
+ 
+\begin_inset Formula $\Biggl($
+\end_inset
+
+ 
+\begin_inset Formula $\bigr]$
+\end_inset
+
+ 
+\begin_inset Formula $\biggr]$
+\end_inset
+
+ 
+\begin_inset Formula $\Biggr]$
+\end_inset
+
+ 
+\begin_inset Formula $\bigl[$
+\end_inset
+
+ 
+\begin_inset Formula $\biggl[$
+\end_inset
+
+ 
+\begin_inset Formula $\Biggl[$
+\end_inset
+
+ 
+\begin_inset Formula $\bigr|$
+\end_inset
+
+ 
+\begin_inset Formula $\biggr|$
+\end_inset
+
+ 
+\begin_inset Formula $\Biggr|$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Matrix:
+ 
+\begin_inset Formula $\left(\begin{matrix}11 & 12\\
+21 & 22
+\end{matrix}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Limes:
+ 
+\begin_inset Formula $\lim_{x\rightarrow\infty}$
+\end_inset
+
+ oder 
+\begin_inset Formula ${\displaystyle \lim_{x\rightarrow\infty}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(Fortführung in der nächsten Spalte...)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%fünfte Spalte:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+matrix[row sep=0mm,
+ column sep = 0pt,
+ matrix anchor=west,ampersand replacement=
+\backslash
+tseqseparator] at (0mm,215.249985mm){
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Section
+Regeln zum Formelsatz (Fortführung)
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "eq:formelsatz-2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Geschweifte Klammer unterhalb:
+ 
+\begin_inset Formula $\underbrace{1+2+3}_{=6}+4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Geschweifte Klammer oberhalb:
+ 
+\begin_inset Formula $1+\overbrace{2+3+4}^{=9}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Strich unterhalb:
+ 
+\begin_inset Formula $\underline{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Teile von Formeln können auch in unterschiedlichen Farben gesetzt werden:
+\begin_inset Formula ${\color{blue}\sin\left({\color{brown}x}\right)^{2}+{\color{magenta}\cos}}\left(x\right)^{2}={\color{green}1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sonderzeichen:
+ 
+\begin_inset Formula $\smiley$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Je nach Umgebung (in-Zeile-Formel oder abgesetzte Formel) werden einige Elemente in unterschiedlicher Größe dargestellt:
+\begin_inset Formula $\int_{0}^{\infty}\mathrm{sin}(x)\,\mathrm{d}x$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\mathrm{sin}(x)\,\mathrm{d}x
+\]
+
+\end_inset
+
+In-Zeile-Formeln können in der Größe von abgesetzten Formeln gesetzt werden:
+ 
+\begin_inset Formula ${\displaystyle {\displaystyle \int_{0}^{\infty}\mathrm{sin}(x)\,\mathrm{d}x}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Latex kennt eine Vielzahl an Sonderzeichen:
+ Erkennung von Sonderzeichen:
+ 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://detexify.kirelabs.org/classify.html
+\end_layout
+
+\end_inset
+
+ Übersicht der Sonderzeichen:
+ 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://mirrors.ctan.org/info/symbols/comprehensive/symbols-a4.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Chapter
+Abbildungen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSLastNode
+status collapsed
+
+\begin_layout Section
+Abbildungen
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "eq:abbildungen"
+
+\end_inset
+
+Beispiel:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/fig_zauberer/zauberer.png
+	width 90mm
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Abbildung 1:
+ Eine Abbildung über eine Spalte
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/fig_zauberer/zauberer.png
+	lyxscale 30
+	width 45mm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/fig_zauberer/zauberer.png
+	lyxscale 30
+	width 45mm
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+Halbe Seitenbreite
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+Halbe Seitenbreite
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Abbildung gedreht:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/fig_zauberer/zauberer.png
+	width 90mm
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%sechste Spalte:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+matrix[row sep=0mm,
+ column sep = 0pt,
+ matrix anchor=west,ampersand replacement=
+\backslash
+tseqseparator] at (0mm,263.083315mm){
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Chapter
+Sechste Spalte
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status collapsed
+
+\begin_layout Plain Layout
+
+\family sans
+\series bold
+\shape italic
+\size larger
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\family default
+\size large
+Formeln verkleinern
+\end_layout
+
+\begin_layout Plain Layout
+Manchmal sind Formeln so breit,
+ dass sie nicht in eine Zeile hineinpassen.
+ In einigen Fällen kann durch 
+\begin_inset Quotes pld
+\end_inset
+
+quetschen
+\begin_inset Quotes prd
+\end_inset
+
+ soviel Platz eingespart werden,
+ dass die Formel doch in eine Zeile passt.
+ Dies erfolgt durch Einfügen von 
+\begin_inset Quotes pld
+\end_inset
+
+negativen Abständen
+\begin_inset Quotes prd
+\end_inset
+
+.
+ Beispiel einer zu breiten Formel:
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+u_{\mathrm{L1}}\\
+u_{\mathrm{L2}}\\
+1
+\end{array}\right)=\left(\left(\begin{array}{c}
+u_{10}\\
+u_{20}\\
+1
+\end{array}\right)\cdot\left(\begin{array}{ccc}
+1 & 1 & 1\end{array}\right)+\left(\begin{array}{ccc}
+\frac{1}{3} & \frac{1}{3} & \frac{2}{3}\\
+\frac{1}{3} & \frac{-2}{3} & \frac{-1}{3}\\
+0 & 0 & 0
+\end{array}\right)\,u_{\mathrm{C}}\right)\cdot\left(\begin{array}{c}
+k_{1}\\
+k_{2}\\
+k_{3}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Abhilfe:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\negmedspace\left(\negmedspace\negmedspace\negmedspace\begin{array}{c}
+u_{\mathrm{L1}}\\
+u_{\mathrm{L2}}\\
+1
+\end{array}\negmedspace\negmedspace\negmedspace\right)\negmedspace=\negmedspace\left(\negmedspace\negmedspace\negmedspace\left(\negmedspace\negmedspace\negmedspace\begin{array}{c}
+u_{10}\\
+u_{20}\\
+1
+\end{array}\negmedspace\negmedspace\negmedspace\right)\negmedspace\cdot\negmedspace\left(\negmedspace\negmedspace\begin{array}{ccc}
+\negmedspace1\negmedspace & \negmedspace1\negmedspace & \negmedspace1\negmedspace\end{array}\negmedspace\negmedspace\right)\negmedspace+\negmedspace\left(\negmedspace\negmedspace\begin{array}{ccc}
+\frac{1}{3} & \frac{1}{3} & \frac{2}{3}\\
+\frac{1}{3} & \frac{-2}{3} & \frac{-1}{3}\\
+0 & 0 & 0
+\end{array}\negmedspace\negmedspace\negmedspace\right)\,u_{\mathrm{C}}\negmedspace\negmedspace\right)\negmedspace\cdot\negmedspace\left(\negmedspace\negmedspace\negmedspace\begin{array}{c}
+k_{1}\\
+k_{2}\\
+k_{3}
+\end{array}\negmedspace\negmedspace\negmedspace\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Abhilfe durch Umbrüche:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{multline*}
+\left(\begin{array}{c}
+u_{\mathrm{L1}}\\
+u_{\mathrm{L2}}\\
+1
+\end{array}\right)=\Biggl(\left(\begin{array}{c}
+u_{10}\\
+u_{20}\\
+1
+\end{array}\right)\cdot\left(\begin{array}{ccc}
+1 & 1 & 1\end{array}\right)+\\
+\left(\begin{array}{ccc}
+\frac{1}{3} & \frac{1}{3} & \frac{2}{3}\\
+\frac{1}{3} & \frac{-2}{3} & \frac{-1}{3}\\
+0 & 0 & 0
+\end{array}\right)\,u_{\mathrm{C}}\Biggr)\cdot\left(\begin{array}{c}
+k_{1}\\
+k_{2}\\
+k_{3}
+\end{array}\right)
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Hinweis:
+ Klammergruppen mit 
+\family typewriter
+
+\backslash
+left(
+\family default
+ und 
+\family typewriter
+
+\backslash
+right)
+\family default
+ können nicht mit einem Umbruch versehen werden.
+ Abhilfe schafft eine manuelle Größeneinstellung einer Klammer mit beispielsweise 
+\family typewriter
+
+\backslash
+Biggl(
+\family default
+ und 
+\family typewriter
+
+\backslash
+Biggr)
+\family default
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+eqnum
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "eq:formelsatz-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSLastNode
+status open
+
+\begin_layout Section
+Source-Code
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:sourcecode"
+
+\end_inset
+
+Source-Code kann mit einer sog.
+ Listings-Umgebung gesetzt werden:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Dies ist ein Source-Code mit einer sehr sehr sehr langen Zeile,
+ die automatisch umbebrochen wird.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{1mm} %
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{plain}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+tsrechts}
+\backslash
+begin{tikzpicture}[inner sep=1pt,
+ scale=
+\backslash
+tsscalefactor]%
+\end_layout
+
+\begin_layout Plain Layout
+
+%inner sep = abstand zwischen Rand und Inhalt-Nodes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[line width=0.5*
+\backslash
+tsscalefactor] (0,0) rectangle (196mm,287mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill[gray] (3mm,183.5mm) circle (3mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill[gray] (3mm,103.5mm) circle (3mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[line width=0.5*
+\backslash
+tsscalefactor] (0,47.833mm) -- (196mm,47.833mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[line width=0.5*
+\backslash
+tsscalefactor] (0,95.666mm) -- (196mm,95.666mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[line width=0.5*
+\backslash
+tsscalefactor] (10mm,143.5mm) -- (196mm,143.5mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[line width=0.5*
+\backslash
+tsscalefactor] (0,191.33mm) -- (196mm,191.33mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[line width=0.5*
+\backslash
+tsscalefactor] (0,239.166mm) -- (196mm,239.166mm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[line width=0.5*
+\backslash
+tsscalefactor] (0.5mm,143.5mm) node[scale=0.6*
+\backslash
+tsscalefactor,
+ text width=140mm,
+ align=center,
+ anchor = north,rotate=90,inner sep=0mm]{
+\backslash
+sffamily
+\backslash
+textbf{
+\backslash
+ueberschrift}};
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%Erste Spalte:
+\end_layout
+
+\begin_layout Plain Layout
+
+%ampersand replacement = 
+\backslash
+& ist wichtig,
+ wenn in dem node eine Tabelle stehen soll
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+matrix[row sep=0mm,
+ column sep = 0pt,
+ matrix anchor=west,ampersand replacement=
+\backslash
+tseqseparator] at (0,23.91666mm){
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Chapter
+Siebte Spalte
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSLastNode
+status open
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%Zweite Spalte:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+matrix[row sep=0mm,
+ column sep = 0pt,
+ matrix anchor=west,ampersand replacement=
+\backslash
+tseqseparator] at (0,71.749995mm){
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Chapter
+Achte Spalte
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSLastNode
+status open
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%Dritte Spalte:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+matrix[row sep=0mm,
+ column sep = 0pt,
+ matrix anchor=west,ampersand replacement=
+\backslash
+tseqseparator] at (6.5mm,119.583325mm){
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Chapter
+Neunte Spalte
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSLastNode
+status open
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%vierte Spalte:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+matrix[row sep=0mm,
+ column sep = 0pt,
+ matrix anchor=west,ampersand replacement=
+\backslash
+tseqseparator] at (6.5mm,167.416655mm){
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Chapter
+Zehnte Spalte
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSLastNode
+status open
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%fünfte Spalte:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+matrix[row sep=0mm,
+ column sep = 0pt,
+ matrix anchor=west,ampersand replacement=
+\backslash
+tseqseparator] at (0mm,215.249985mm){
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Chapter
+Elfte Spalte
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSLastNode
+status open
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%sechste Spalte:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+matrix[row sep=0mm,
+ column sep = 0pt,
+ matrix anchor=west,ampersand replacement=
+\backslash
+tseqseparator] at (0mm,263.083315mm){
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSNode
+status open
+
+\begin_layout Chapter
+Zwölfte Spalte
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex FSLastNode
+status open
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

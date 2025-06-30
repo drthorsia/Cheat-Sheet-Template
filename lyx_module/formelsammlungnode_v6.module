@@ -1,0 +1,28 @@
+#\DeclareLyXModule{FSNodev6}
+#DescriptionBegin
+# Element einer Formelsammlung
+#DescriptionEnd
+
+Format 49
+
+InsetLayout Flex:FSNode
+   LyXType     custom
+   Decoration classic
+   LabelString "Formel"
+   LatexType   None
+   LatexName   node
+   LeftDelim       "\node[rotate=\tsrotate, inner sep=2pt, scale=0.49*\tsscalefactor,text width=94mm, draw, line width=0.5*\tsscalefactor]{"
+   RightDelim       "%<br/>};\tseqseparator"
+   MultiPar    true
+End
+
+InsetLayout Flex:FSLastNode
+   LyXType     custom
+   Decoration  classic
+   LabelString "letzte Formel"
+   LatexName   node
+   LatexType   None
+   LeftDelim   "\node[rotate=\tsrotate, inner sep=2pt, scale=0.49*\tsscalefactor,text width=94mm, draw, line width=0.5*\tsscalefactor]{"
+   RightDelim  "%<br/>};\\};"
+   MultiPar    true
+End

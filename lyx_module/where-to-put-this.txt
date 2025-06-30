@@ -1,0 +1,2 @@
+C:\Users\USERNAME\AppData\Roaming\LyX2.3\layouts  (or corresponding versions)
+Afterwards: tools -> new configuration (or similar)
